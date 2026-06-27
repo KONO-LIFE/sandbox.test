@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bs86uoxd6klvs"]
+
+[ext_resource type="Texture2D" uid="uid://fd5t8rffmkx7" path="res://sonic_frontiers_-_soldier_kronos_island_3.png" id="1_a202f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_noarx"]
+albedo_color = Color(0.010858082, 0.005438263, 0.007898907, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0tk4"]
+albedo_texture = ExtResource("1_a202f")
+
+[node name="Node3D" type="Node3D" unique_id=621034836]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1227131944]
+transform = Transform3D(0.7018854, 0.6056917, -0.37482598, 0.6995948, -0.68511534, 0.20293906, -0.13388053, -0.40466627, -0.9046112, 1.1180456, 4.8678603, 0.24868679)
+shadow_enabled = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=674070804]
+layers = 33
+size = Vector3(10, 0.1, 10)
+material = SubResource("StandardMaterial3D_noarx")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1356168969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.53830695, 0)
+material = SubResource("StandardMaterial3D_a0tk4")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=334500029]
+transform = Transform3D(0.98933417, 0.059910398, -0.13277312, -0.06294432, 0.9978406, -0.018768452, 0.13136198, 0.026925584, 0.9909688, -1.8376349, 1.2315245, 2.67373)
